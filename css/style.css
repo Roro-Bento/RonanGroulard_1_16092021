@@ -1,3 +1,19 @@
+/* fonts */
+
+@font-face {
+    font-family: 'Raleway';
+    src: url(fonts/Raleway/Raleway-Italic-VariableFont_wght.ttf);
+    src: url(fonts/Raleway/Raleway-VariableFont_wght.ttf);
+}
+
+body,
+button {
+    font-family: 'Raleway', Arial, Helvetica;
+}
+
+
+/* header */
+
 header {
     padding: 25px;
     display: flex;
@@ -24,5 +40,119 @@ li a:hover {
 }
 
 li a:focus {
+    border-top: 2px solid #0065FC;
+    padding-top: 48px;
     color: #0065FC;
+}
+
+
+/* first section */
+
+.searchBar {
+    padding-left: 50px;
+}
+
+.bar {
+    display: flex;
+}
+
+.marker {
+    max-height: 18px;
+}
+
+.searchButton {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #F2F2F2;
+    background: #F2F2F2;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px 0 0 10px;
+}
+
+.searchTerm {
+    width: 100%;
+    border: 1px solid #F2F2F2;
+    border-left: none;
+    padding: 5px;
+    height: 28px;
+    outline: none;
+    max-width: 200px;
+}
+
+.searchButtonEnd {
+    height: 40px;
+    border: 1px solid #0065FC;
+    background: #0065FC;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 10px 10px 0;
+    padding: 0 10px;
+}
+
+.filters {
+    display: flex;
+    align-items: center;
+}
+
+.filterChild {
+    align-items: center;
+    display: flex;
+    margin-right: 20px;
+}
+
+.filterButton {
+    border-radius: 100%;
+    padding: 8px;
+    border: 0px;
+    background-color: #DEEBFF;
+    min-width: 40px;
+    z-index: 1;
+}
+
+.filterIcon {
+    height: 20px;
+    z-index: 2;
+}
+
+.filterButtonEnd {
+    border-radius: 0 50px 50px 0;
+    margin-left: -20px;
+    padding: 8px 8px 8px 26px;
+    border: 2px solid #F2F2F2;
+    min-width: 40px;
+    background-color: white;
+    height: 40px;
+    transition: 0.3s ease-out 100ms;
+}
+
+.filterButtonEnd:hover {
+    border-color: #DEEBFF;
+    background-color: #0065FC;
+    color: white;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+}
+
+.infoIcon {
+    height: 20px;
+    width: 20px;
+    border: 2px solid #F2F2F2;
+    border-radius: 50% 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.infoIconSize {
+    height: 15px;
+    width: auto;
 }
