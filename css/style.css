@@ -11,6 +11,12 @@ button {
     font-family: 'Raleway', Arial, Helvetica;
 }
 
+h1,
+h2,
+h3 {
+    font-weight: 700;
+}
+
 
 /* header */
 
@@ -155,4 +161,152 @@ li a:focus {
 .infoIconSize {
     height: 15px;
     width: auto;
+}
+
+
+/* second section */
+
+.accomodations {
+    display: flex;
+    gap: 50px;
+    padding-left: 50px;
+    padding-right: 0px;
+}
+
+.leftSubsection {
+    max-width: 65%;
+    background-color: #F2F2F2;
+    border-radius: 25px;
+}
+
+.leftSubsecTitle {
+    margin-left: 60px;
+}
+
+.thumbnails {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 40px 0;
+}
+
+.thumbnail {
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    overflow: hidden;
+    align-content: space-around;
+}
+
+.thumbnailImg {
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+    border: 5px solid white;
+    border-radius: 25px 25px 0 0;
+}
+
+.thumbnailTitle {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.thumbnailDesc {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.thumbnailPrice {
+    font-weight: 700;
+    margin: 0;
+}
+
+.thumbnailRating {
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.ratingIcon {
+    height: 15px;
+    width: auto;
+}
+
+.showMore {
+    margin: 40px 0 40px 60px;
+}
+
+.mostPopular {
+    width: auto;
+    background-color: #F2F2F2;
+    border-radius: 25px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    max-width: 30%;
+}
+
+.popularTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10% 0 10%;
+}
+
+.trendIcon {
+    height: 20px;
+    width: auto;
+}
+
+.trendThumbnails {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 40px 0;
+}
+
+.trendThumbnail {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    overflow: hidden;
+    align-content: space-around;
+    max-width: 500px;
+}
+
+.trendThumbnailImg {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border: 5px solid white;
+    border-radius: 25px 0 0 25px;
+}
+
+.trendThumbailInfo {
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    margin-left: 20px;
+}
+
+.trendThumbnailTitle {
+    max-width: 200px;
+    margin-bottom: 0;
+}
+
+.trendThumbnailDesc {
+    margin-top: 10px;
+}
+
+.trendThumbnailPrice {
+    font-weight: 700;
+}
+
+.trendThumbnailRating {
+    margin-top: 75px;
 }
