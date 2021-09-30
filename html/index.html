@@ -13,18 +13,20 @@
     <!-- HEADER -->
     <header>
         <img src="../css/images/logo/Reservia.svg" alt="logo reservia" id="logo">
-        <nav>
-            <ul class="menu">
-                <li><a href='#'>Hébergement</a></li>
-                <li><a href='#'>Activités</a></li>
-                <li><a href='#'>S'inscrire</a></li>
-            </ul>
-        </nav>
+        <div class="global-header-nav">
+            <div class="header-nav">
+                <a href='#'>Hébergement</a>
+                <a href='#'>Activités</a>
+            </div>
+            <div class="header-signup">
+                <a href='#'>S'inscrire</a>
+            </div>
+        </div>
     </header>
     <!-- MAIN CONTAIN EVEY SECTION -->
     <main>
         <!-- SEARCHBAR WITH FILTERS SECTION -->
-        <section class="searchBar">
+        <section class="search-bar">
             <div class="above">
                 <h1>
                     Trouvez votre hébergement pour des vacances de rêve
@@ -34,182 +36,182 @@
                 </p>
             </div>
             <div class="bar">
-                <button class="searchButton">
+                <button class="search-button">
                 <img src="../css/images/icons/map-marker.svg" alt="map marker icon" class="marker">
             </button>
-                <input type="text" class="searchTerm" placeholder="Marseille, France">
-                <button class="searchButtonEnd pointer">
+                <input type="text" class="search-term" placeholder="Marseille, France">
+                <button class="search-button-end pointer">
                 Rechercher
             </button>
             </div>
             <div class="filters">
-                <p class="filterChild">Filtres</p>
-                <div class="filterChild">
-                    <button class="filterButton pointer">
-                    <img src="../css/images/icons/money-bill-wave.svg" alt="money bill icon" class="filterIcon">
+                <p class="filter-child filter-title">Filtres</p>
+                <div class="filter-child">
+                    <button class="filter-button pointer">
+                    <img src="../css/images/icons/money-bill-wave.svg" alt="money bill icon" class="filter-icon">
                 </button>
-                    <button class="filterButtonEnd pointer">
+                    <button class="filter-button-end pointer">
                     Economique
                 </button>
                 </div>
-                <div class="filterChild">
-                    <button class="filterButton pointer">
-                    <img src="../css/images/icons/child.svg" alt="happy child icon" class="filterIcon">
+                <div class="filter-child">
+                    <button class="filter-button pointer">
+                    <img src="../css/images/icons/child.svg" alt="happy child icon" class="filter-icon">
                 </button>
-                    <button class="filterButtonEnd pointer">
+                    <button class="filter-button-end pointer">
                     Familial
                 </button>
                 </div>
-                <div class="filterChild">
-                    <button class="filterButton pointer">
-                    <img src="../css/images/icons/heart.svg" alt="heart icon" class="filterIcon">
+                <div class="filter-child">
+                    <button class="filter-button pointer">
+                    <img src="../css/images/icons/heart.svg" alt="heart icon" class="filter-icon">
                 </button>
-                    <button class="filterButtonEnd pointer">
+                    <button class="filter-button-end pointer">
                     Romantique
                 </button>
                 </div>
-                <div class="filterChild">
-                    <button class="filterButton pointer">
-                    <img src="../css/images/icons/dog.svg" alt="dog icon" class="filterIcon">
+                <div class="filter-child">
+                    <button class="filter-button pointer">
+                    <img src="../css/images/icons/dog.svg" alt="dog icon" class="filter-icon">
                 </button>
-                    <button class="filterButtonEnd pointer">
+                    <button class="filter-button-end pointer">
                     Animaux autorisés
                 </button>
                 </div>
             </div>
             <div class="info">
-                <div class="infoIcon"><img src="../css/images/icons/info.svg" alt="information icon" class="infoIconSize"></div>
+                <div class="info-icon"><img src="../css/images/icons/info.svg" alt="information icon" class="info-icon-size"></div>
                 <p>Plus de 500 logements sont disponnibles dans cette ville</p>
             </div>
         </section>
         <!-- ACCOMODATIONS SECTION LEFT -->
         <section class="accomodations">
-            <div class="leftSubsection">
-                <h1 class="leftSubsecTitle">Hébergements à Marseille</h1>
+            <div class="left-subsection">
+                <h1 class="left-subsec-title">Hébergements à Marseille</h1>
                 <div class="thumbnails">
                     <div class="thumbnail">
-                        <img src="../css/images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebiere picture" class="thumbnailImg">
-                        <h3 class="thumbnailTitle">Auberge la Cannebière</h3>
-                        <p class="thumbnailDesc">Nuit à partir de <span class="thumbnailPrice">25€</span></p>
-                        <div class="thumbnailRating">
-                            <img src="../css/images/icons/star.svg" class="ratingIcon">
-                            <img src="../css/images/icons/star.svg" class="ratingIcon">
-                            <img src="../css/images/icons/star.svg" class="ratingIcon">
-                            <img src="../css/images/icons/star.svg" class="ratingIcon">
-                            <img src="../css/images/icons/star-empty.svg" class="ratingIcon">
+                        <img src="../css/images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebiere picture" class="thumbnail-img">
+                        <h3 class="thumbnail-title">Auberge la Cannebière</h3>
+                        <p class="thumbnail-desc">Nuit à partir de <span class="thumbnail-price">25€</span></p>
+                        <div class="thumbnail-rating">
+                            <img src="../css/images/icons/star.svg" alt="rating icon" class="rating-icon">
+                            <img src="../css/images/icons/star.svg" alt="rating icon" class="rating-icon">
+                            <img src="../css/images/icons/star.svg" alt="rating icon" class="rating-icon">
+                            <img src="../css/images/icons/star.svg" alt="rating icon" class="rating-icon">
+                            <img src="../css/images/icons/star-empty.svg" alt="rating icon" class="rating-icon">
                         </div>
                     </div>
                     <div class="thumbnail">
-                        <img src="../css/images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="hotel du port picture" class="thumbnailImg">
-                        <h3 class="thumbnailTitle">Hôtel du port</h3>
-                        <p class="thumbnailDesc">Nuit à partir de <span class="thumbnailPrice">52€</span></p>
-                        <div class="thumbnailRating">
-                            <img src="../css/images/icons/star.svg" class="ratingIcon">
-                            <img src="../css/images/icons/star.svg" class="ratingIcon">
-                            <img src="../css/images/icons/star.svg" class="ratingIcon">
-                            <img src="../css/images/icons/star.svg" class="ratingIcon">
-                            <img src="../css/images/icons/star.svg" class="ratingIcon">
+                        <img src="../css/images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="hotel du port picture" class="thumbnail-img">
+                        <h3 class="thumbnail-title">Hôtel du port</h3>
+                        <p class="thumbnail-desc">Nuit à partir de <span class="thumbnail-price">52€</span></p>
+                        <div class="thumbnail-rating">
+                            <img src="../css/images/icons/star.svg" alt="rating icon" class="rating-icon">
+                            <img src="../css/images/icons/star.svg" alt="rating icon" class="rating-icon">
+                            <img src="../css/images/icons/star.svg" alt="rating icon" class="rating-icon">
+                            <img src="../css/images/icons/star.svg" alt="rating icon" class="rating-icon">
+                            <img src="../css/images/icons/star.svg" alt="rating icon" class="rating-icon">
                         </div>
                     </div>
                     <div class="thumbnail">
-                        <img src="../css/images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="hotel les mouettes picture" class="thumbnailImg">
-                        <h3 class="thumbnailTitle">Hôtel Les mouettes</h3>
-                        <p class="thumbnailDesc">Nuit à partir de <span class="thumbnailPrice">76€</span></p>
-                        <div class="thumbnailRating">
-                            <img src="../css/images/icons/star.svg" class="ratingIcon">
-                            <img src="../css/images/icons/star.svg" class="ratingIcon">
-                            <img src="../css/images/icons/star.svg" class="ratingIcon">
-                            <img src="../css/images/icons/star.svg" class="ratingIcon">
-                            <img src="../css/images/icons/star-empty.svg" class="ratingIcon">
+                        <img src="../css/images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="hotel les mouettes picture" class="thumbnail-img">
+                        <h3 class="thumbnail-title">Hôtel Les mouettes</h3>
+                        <p class="thumbnail-desc">Nuit à partir de <span class="thumbnail-price">76€</span></p>
+                        <div class="thumbnail-rating">
+                            <img src="../css/images/icons/star.svg" alt="rating icon" class="rating-icon">
+                            <img src="../css/images/icons/star.svg" alt="rating icon" class="rating-icon">
+                            <img src="../css/images/icons/star.svg" alt="rating icon" class="rating-icon">
+                            <img src="../css/images/icons/star.svg" alt="rating icon" class="rating-icon">
+                            <img src="../css/images/icons/star-empty.svg" alt="rating icon" class="rating-icon">
                         </div>
                     </div>
                     <div class="thumbnail">
-                        <img src="../css/images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="hotel de la mer picture" class="thumbnailImg">
-                        <h3 class="thumbnailTitle">Hôtel de la mer</h3>
-                        <p class="thumbnailDesc">Nuit à partir de <span class="thumbnailPrice">46€</span></p>
-                        <div class="thumbnailRating">
-                            <img src="../css/images/icons/star.svg" class="ratingIcon">
-                            <img src="../css/images/icons/star.svg" class="ratingIcon">
-                            <img src="../css/images/icons/star.svg" class="ratingIcon">
-                            <img src="../css/images/icons/star-empty.svg" class="ratingIcon">
-                            <img src="../css/images/icons/star-empty.svg" class="ratingIcon">
+                        <img src="../css/images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="hotel de la mer picture" class="thumbnail-img">
+                        <h3 class="thumbnail-title">Hôtel de la mer</h3>
+                        <p class="thumbnail-desc">Nuit à partir de <span class="thumbnail-price">46€</span></p>
+                        <div class="thumbnail-rating">
+                            <img src="../css/images/icons/star.svg" alt="rating icon" class="rating-icon">
+                            <img src="../css/images/icons/star.svg" alt="rating icon" class="rating-icon">
+                            <img src="../css/images/icons/star.svg" alt="rating icon" class="rating-icon">
+                            <img src="../css/images/icons/star-empty.svg" alt="rating icon" class="rating-icon">
+                            <img src="../css/images/icons/star-empty.svg" alt="rating icon" class="rating-icon">
                         </div>
                     </div>
                     <div class="thumbnail">
-                        <img src="../css/images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="auberge le panier picture" class="thumbnailImg">
-                        <h3 class="thumbnailTitle">Auberge Le panier</h3>
-                        <p class="thumbnailDesc">Nuit à partir de <span class="thumbnailPrice">23€</span></p>
-                        <div class="thumbnailRating">
-                            <img src="../css/images/icons/star.svg" class="ratingIcon">
-                            <img src="../css/images/icons/star.svg" class="ratingIcon">
-                            <img src="../css/images/icons/star.svg" class="ratingIcon">
-                            <img src="../css/images/icons/star.svg" class="ratingIcon">
-                            <img src="../css/images/icons/star-empty.svg" class="ratingIcon">
+                        <img src="../css/images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="auberge le panier picture" class="thumbnail-img">
+                        <h3 class="thumbnail-title">Auberge Le panier</h3>
+                        <p class="thumbnail-desc">Nuit à partir de <span class="thumbnail-price">23€</span></p>
+                        <div class="thumbnail-rating">
+                            <img src="../css/images/icons/star.svg" alt="rating icon" class="rating-icon">
+                            <img src="../css/images/icons/star.svg" alt="rating icon" class="rating-icon">
+                            <img src="../css/images/icons/star.svg" alt="rating icon" class="rating-icon">
+                            <img src="../css/images/icons/star.svg" alt="rating icon" class="rating-icon">
+                            <img src="../css/images/icons/star-empty.svg" alt="rating icon" class="rating-icon">
                         </div>
                     </div>
                     <div class="thumbnail">
-                        <img src="../css/images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="hotel chez Amina picture" class="thumbnailImg">
-                        <h3 class="thumbnailTitle">Hôtel chez Amina</h3>
-                        <p class="thumbnailDesc">Nuit à partir de <span class="thumbnailPrice">96€</span></p>
-                        <div class="thumbnailRating">
-                            <img src="../css/images/icons/star.svg" class="ratingIcon">
-                            <img src="../css/images/icons/star.svg" class="ratingIcon">
-                            <img src="../css/images/icons/star.svg" class="ratingIcon">
-                            <img src="../css/images/icons/star.svg" class="ratingIcon">
-                            <img src="../css/images/icons/star.svg" class="ratingIcon">
+                        <img src="../css/images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="hotel chez Amina picture" class="thumbnail-img">
+                        <h3 class="thumbnail-title">Hôtel chez Amina</h3>
+                        <p class="thumbnail-desc">Nuit à partir de <span class="thumbnail-price">96€</span></p>
+                        <div class="thumbnail-rating">
+                            <img src="../css/images/icons/star.svg" alt="rating icon" class="rating-icon">
+                            <img src="../css/images/icons/star.svg" alt="rating icon" class="rating-icon">
+                            <img src="../css/images/icons/star.svg" alt="rating icon" class="rating-icon">
+                            <img src="../css/images/icons/star.svg" alt="rating icon" class="rating-icon">
+                            <img src="../css/images/icons/star.svg" alt="rating icon" class="rating-icon">
                         </div>
                     </div>
                 </div>
-                <h3 class="showMore">
+                <h3 class="show-more">
                     Afficher plus
                 </h3>
             </div>
             <!-- ACCOMODATIONS SECTION RIGHT/MOST POPULAR -->
-            <div class="mostPopular">
-                <div class="popularTop">
-                    <h2 class="popularTitle">Les plus populaires</h2>
-                    <img src="../css/images/icons/arrow-trend-up.svg" class="trendIcon">
+            <div class="most-popular">
+                <div class="popular-top">
+                    <h2 class="popular-title">Les plus populaires</h2>
+                    <img src="../css/images/icons/arrow-trend-up.svg" alt="trend icon" class="trend-icon">
                 </div>
-                <div class="trendThumbnails">
-                    <div class="trendThumbnail">
-                        <img src="../css/images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="hotel le soleil du matin picture" class="trendThumbnailImg">
-                        <div class="trendThumbailInfo">
-                            <h3 class="trendThumbnailTitle">Hôtel Le soleil du matin</h3>
-                            <p class="trendThumbnailDesc">Nuit à partir de <span class="trendThumbnailPrice">128€</span></p>
-                            <div class="trendThumbnailRating">
-                                <img src="../css/images/icons/star.svg" class="ratingIcon">
-                                <img src="../css/images/icons/star.svg" class="ratingIcon">
-                                <img src="../css/images/icons/star.svg" class="ratingIcon">
-                                <img src="../css/images/icons/star.svg" class="ratingIcon">
-                                <img src="../css/images/icons/star.svg" class="ratingIcon">
+                <div class="trend-thumbnails">
+                    <div class="trend-thumbnail">
+                        <img src="../css/images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="hotel le soleil du matin picture" class="trend-thumbnail-img">
+                        <div class="trend-thumbail-info">
+                            <h3 class="trend-thumbnail-title">Hôtel Le soleil du matin</h3>
+                            <p class="trend-thumbnail-desc">Nuit à partir de <span class="trend-thumbnail-price">128€</span></p>
+                            <div class="trend-thumbnail-rating">
+                                <img src="../css/images/icons/star.svg" alt="rating icon" class="rating-icon">
+                                <img src="../css/images/icons/star.svg" alt="rating icon" class="rating-icon">
+                                <img src="../css/images/icons/star.svg" alt="rating icon" class="rating-icon">
+                                <img src="../css/images/icons/star.svg" alt="rating icon" class="rating-icon">
+                                <img src="../css/images/icons/star.svg" alt="rating icon" class="rating-icon">
                             </div>
                         </div>
                     </div>
-                    <div class="trendThumbnail">
-                        <img src="../css/images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="host chamber au coeur de l'eau picture" class="trendThumbnailImg">
-                        <div class="trendThumbailInfo">
-                            <h3 class="trendThumbnailTitle">Au coeur de l'eau Chambres d'hôtes</h3>
-                            <p class="trendThumbnailDesc">Nuit à partir de <span class="trendThumbnailPrice">71€</span></p>
-                            <div class="trendThumbnailRating">
-                                <img src="../css/images/icons/star.svg" class="ratingIcon">
-                                <img src="../css/images/icons/star.svg" class="ratingIcon">
-                                <img src="../css/images/icons/star.svg" class="ratingIcon">
-                                <img src="../css/images/icons/star.svg" class="ratingIcon">
-                                <img src="../css/images/icons/star-empty.svg" class="ratingIcon">
+                    <div class="trend-thumbnail">
+                        <img src="../css/images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="host chamber au coeur de l'eau picture" class="trend-thumbnail-img">
+                        <div class="trend-thumbail-info">
+                            <h3 class="trend-thumbnail-title">Au coeur de l'eau Chambres d'hôtes</h3>
+                            <p class="trend-thumbnail-desc">Nuit à partir de <span class="trend-thumbnail-price">71€</span></p>
+                            <div class="trend-thumbnail-rating">
+                                <img src="../css/images/icons/star.svg" alt="rating icon" class="rating-icon">
+                                <img src="../css/images/icons/star.svg" alt="rating icon" class="rating-icon">
+                                <img src="../css/images/icons/star.svg" alt="rating icon" class="rating-icon">
+                                <img src="../css/images/icons/star.svg" alt="rating icon" class="rating-icon">
+                                <img src="../css/images/icons/star-empty.svg" alt="rating icon" class="rating-icon">
                             </div>
                         </div>
                     </div>
-                    <div class="trendThumbnail">
-                        <img src="../css/images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="hotel tout bleu de blanc picture" class="trendThumbnailImg">
-                        <div class="trendThumbailInfo">
-                            <h3 class="trendThumbnailTitle">Hôtel Tout bleu et Blanc</h3>
-                            <p class="trendThumbnailDesc">Nuit à partir de <span class="trendThumbnailPrice">68€</span></p>
-                            <div class="trendThumbnailRating">
-                                <img src="../css/images/icons/star.svg" class="ratingIcon">
-                                <img src="../css/images/icons/star.svg" class="ratingIcon">
-                                <img src="../css/images/icons/star.svg" class="ratingIcon">
-                                <img src="../css/images/icons/star.svg" class="ratingIcon">
-                                <img src="../css/images/icons/star-empty.svg" class="ratingIcon">
+                    <div class="trend-thumbnail">
+                        <img src="../css/images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="hotel tout bleu de blanc picture" class="trend-thumbnail-img">
+                        <div class="trend-thumbail-info">
+                            <h3 class="trend-thumbnail-title">Hôtel Tout bleu et Blanc</h3>
+                            <p class="trend-thumbnail-desc">Nuit à partir de <span class="trend-thumbnail-price">68€</span></p>
+                            <div class="trend-thumbnail-rating">
+                                <img src="../css/images/icons/star.svg" alt="rating icon" class="rating-icon">
+                                <img src="../css/images/icons/star.svg" alt="rating icon" class="rating-icon">
+                                <img src="../css/images/icons/star.svg" alt="rating icon" class="rating-icon">
+                                <img src="../css/images/icons/star.svg" alt="rating icon" class="rating-icon">
+                                <img src="../css/images/icons/star-empty.svg" alt="rating icon" class="rating-icon">
                             </div>
                         </div>
                     </div>

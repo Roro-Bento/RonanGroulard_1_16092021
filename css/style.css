@@ -7,13 +7,15 @@
 }
 
 body,
-button {
+button,
+input {
     font-family: 'Raleway', Arial, Helvetica;
 }
 
 h1,
 h2,
-h3 {
+h3,
+input {
     font-weight: 700;
 }
 
@@ -24,51 +26,68 @@ header {
     padding: 25px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 #logo {
     margin-left: 25px;
 }
 
-.menu li {
-    display: inline;
-    padding-right: 50px;
+.global-header-nav {
+    display: flex;
+    flex-direction: row;
+    padding-right: 20px;
 }
 
-li a {
+.header-signup>a {
+    color: #0065FC;
+    font-weight: 700;
+    padding: 0 20px 0 20px;
+    text-decoration: none;
+}
+
+.header-nav>a {
     text-decoration: none;
     color: black;
     transition: all 0.5s ease-out;
+    padding: 0 20px 0 20px;
 }
 
-li a:hover {
+.header-nav>a:hover,
+.header-signup>a:hover {
     color: #0065FC;
 }
 
-li a:focus {
+.header-nav>a:focus,
+.header-signup>a:focus {
     border-top: 2px solid #0065FC;
-    padding-top: 48px;
+    padding-top: 44px;
     color: #0065FC;
 }
 
 
 /* first section */
 
-.searchBar {
+.search-bar {
     padding-left: 50px;
+}
+
+.above>p {
+    margin: -15px 0 20px 0;
 }
 
 .bar {
     display: flex;
+    margin-bottom: 30px;
 }
 
 .marker {
     max-height: 18px;
 }
 
-.searchButton {
-    width: 40px;
-    height: 40px;
+.search-button {
+    width: 50px;
+    height: 50px;
     border: 1px solid #F2F2F2;
     background: #F2F2F2;
     text-align: center;
@@ -76,21 +95,28 @@ li a:focus {
     border-radius: 10px 0 0 10px;
 }
 
-.searchTerm {
+input {
+    font-size: 17px;
+    color: black;
+}
+
+.search-term {
     width: 100%;
     border: 1px solid #F2F2F2;
     border-left: none;
     padding: 5px;
-    height: 28px;
+    height: 38px;
     outline: none;
     max-width: 200px;
+    padding-left: 20px;
 }
 
-.searchButtonEnd {
-    height: 40px;
+.search-button-end {
+    height: 50px;
     border: 1px solid #0065FC;
     background: #0065FC;
     text-align: center;
+    font-weight: 700;
     color: #fff;
     border-radius: 0 10px 10px 0;
     padding: 0 10px;
@@ -101,38 +127,47 @@ li a:focus {
     align-items: center;
 }
 
-.filterChild {
+.filter-child {
     align-items: center;
     display: flex;
-    margin-right: 20px;
+    padding: 0 20px 0 20px;
 }
 
-.filterButton {
+.filter-title {
+    font-weight: 700;
+    padding-left: 0;
+}
+
+.filter-button {
     border-radius: 100%;
     padding: 8px;
     border: 0px;
     background-color: #DEEBFF;
     min-width: 40px;
     z-index: 1;
+    height: 3rem;
+    width: 3rem;
 }
 
-.filterIcon {
+.filter-icon {
     height: 20px;
     z-index: 2;
 }
 
-.filterButtonEnd {
+.filter-button-end {
     border-radius: 0 50px 50px 0;
     margin-left: -20px;
-    padding: 8px 8px 8px 26px;
+    padding: 8px 18px 8px 38px;
     border: 2px solid #F2F2F2;
     min-width: 40px;
     background-color: white;
-    height: 40px;
+    height: 3rem;
     transition: 0.3s ease-out 100ms;
+    font-weight: 700;
+    font-size: 15px;
 }
 
-.filterButtonEnd:hover {
+.filter-button-end:hover {
     border-color: #DEEBFF;
     background-color: #0065FC;
     color: white;
@@ -145,9 +180,10 @@ li a:focus {
 .info {
     display: flex;
     align-items: center;
+    margin: 25px 0;
 }
 
-.infoIcon {
+.info-icon {
     height: 20px;
     width: 20px;
     border: 2px solid #F2F2F2;
@@ -158,9 +194,13 @@ li a:focus {
     flex-direction: row;
 }
 
-.infoIconSize {
+.info-icon-size {
     height: 15px;
     width: auto;
+}
+
+.info>p {
+    margin-left: 20px;
 }
 
 
@@ -173,13 +213,13 @@ li a:focus {
     padding-right: 0px;
 }
 
-.leftSubsection {
+.left-subsection {
     max-width: 65%;
     background-color: #F2F2F2;
     border-radius: 25px;
 }
 
-.leftSubsecTitle {
+.left-subsec-title {
     margin-left: 60px;
 }
 
@@ -199,7 +239,7 @@ li a:focus {
     align-content: space-around;
 }
 
-.thumbnailImg {
+.thumbnail-img {
     height: 200px;
     width: 300px;
     object-fit: cover;
@@ -207,36 +247,36 @@ li a:focus {
     border-radius: 25px 25px 0 0;
 }
 
-.thumbnailTitle {
+.thumbnail-title {
     margin: 0;
     padding-left: 20px;
 }
 
-.thumbnailDesc {
+.thumbnail-desc {
     padding-left: 20px;
     margin: 10px 0;
 }
 
-.thumbnailPrice {
+.thumbnail-price {
     font-weight: 700;
     margin: 0;
 }
 
-.thumbnailRating {
+.thumbnail-rating {
     padding-left: 20px;
     margin-bottom: 10px;
 }
 
-.ratingIcon {
+.rating-icon {
     height: 15px;
     width: auto;
 }
 
-.showMore {
+.show-more {
     margin: 40px 0 40px 60px;
 }
 
-.mostPopular {
+.most-popular {
     width: auto;
     background-color: #F2F2F2;
     border-radius: 25px;
@@ -247,19 +287,19 @@ li a:focus {
     max-width: 30%;
 }
 
-.popularTop {
+.popular-top {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 0 10% 0 10%;
 }
 
-.trendIcon {
+.trend-icon {
     height: 20px;
     width: auto;
 }
 
-.trendThumbnails {
+.trend-thumbnails {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -267,7 +307,7 @@ li a:focus {
     gap: 40px 0;
 }
 
-.trendThumbnail {
+.trend-thumbnail {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -279,7 +319,7 @@ li a:focus {
     max-width: 500px;
 }
 
-.trendThumbnailImg {
+.trend-thumbnail-img {
     height: 200px;
     width: 200px;
     object-fit: cover;
@@ -287,27 +327,27 @@ li a:focus {
     border-radius: 25px 0 0 25px;
 }
 
-.trendThumbailInfo {
+.trend-thumbail-info {
     display: flex;
     flex-direction: column;
     width: 220px;
     margin-left: 20px;
 }
 
-.trendThumbnailTitle {
+.trend-thumbnail-title {
     max-width: 200px;
     margin-bottom: 0;
 }
 
-.trendThumbnailDesc {
+.trend-thumbnail-desc {
     margin-top: 10px;
 }
 
-.trendThumbnailPrice {
+.trend-thumbnail-price {
     font-weight: 700;
 }
 
-.trendThumbnailRating {
+.trend-thumbnail-rating {
     margin-top: 75px;
 }
 
