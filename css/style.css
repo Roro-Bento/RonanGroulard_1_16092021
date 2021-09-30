@@ -324,7 +324,7 @@ li a:focus {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .activity {
@@ -332,6 +332,7 @@ li a:focus {
     border-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     overflow: hidden;
+    max-height: 664px;
 }
 
 .activity-dual {
@@ -359,19 +360,20 @@ li a:focus {
 }
 
 .card-35>.activity-img {
-    height: 73%;
+    height: 72%;
     object-fit: cover;
 }
 
 .card-50>.activity-img {
     height: 80%;
-    object-fit: contain;
+    object-fit: fill;
 }
 
 .activity-img {
     width: 350px;
     height: 600px;
     object-fit: none;
+    height: 90%;
 }
 
 .activity-info {
@@ -399,8 +401,6 @@ footer {
     width: 33%;
 }
 
-.about-title {}
-
 .about-list {
     list-style: none;
     margin-left: -40px;
@@ -414,8 +414,6 @@ footer {
     width: 33%;
 }
 
-.services-title {}
-
 .services-list {
     list-style: none;
     margin-left: -40px;
@@ -428,8 +426,6 @@ footer {
 .help {
     width: 33%;
 }
-
-.help-title {}
 
 .help-list {
     list-style: none;
