@@ -310,3 +310,71 @@ li a:focus {
 .trendThumbnailRating {
     margin-top: 75px;
 }
+
+
+/* third section */
+
+.activities-title {
+    width: 100%;
+}
+
+.activities {
+    margin: 20px auto 0 auto;
+    width: 90%;
+    max-height: 664px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.activity {
+    width: 350px;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    overflow: hidden;
+}
+
+.activity-dual {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-height: 664px;
+}
+
+.card-60 {
+    height: 60%;
+}
+
+.card-35 {
+    max-height: 35%;
+}
+
+.card-50 {
+    max-height: 50%;
+}
+
+.card-60>.activity-img {
+    height: 85%;
+}
+
+.card-35>.activity-img {
+    height: 73%;
+    object-fit: cover;
+}
+
+.card-50>.activity-img {
+    height: 80%;
+    object-fit: contain;
+}
+
+.activity-img {
+    width: 350px;
+    height: 600px;
+    object-fit: none;
+}
+
+.activity-info {
+    padding-left: 20px;
+}
