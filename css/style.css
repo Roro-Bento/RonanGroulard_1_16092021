@@ -321,7 +321,6 @@ li a:focus {
 .activities {
     margin: 20px auto 0 auto;
     width: 90%;
-    max-height: 664px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -377,4 +376,66 @@ li a:focus {
 
 .activity-info {
     padding-left: 20px;
+}
+
+
+/* footer */
+
+footer {
+    background-color: #F2F2F2;
+    padding: 25px 0 50px 0;
+    margin-top: 60px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0 auto 0 auto;
+    width: 90%;
+}
+
+.about {
+    width: 33%;
+}
+
+.about-title {}
+
+.about-list {
+    list-style: none;
+    margin-left: -40px;
+}
+
+.about-list-element {
+    line-height: 30px;
+}
+
+.services {
+    width: 33%;
+}
+
+.services-title {}
+
+.services-list {
+    list-style: none;
+    margin-left: -40px;
+}
+
+.services-list-element {
+    line-height: 30px;
+}
+
+.help {
+    width: 33%;
+}
+
+.help-title {}
+
+.help-list {
+    list-style: none;
+    margin-left: -40px;
+}
+
+.help-list-element {
+    line-height: 30px;
 }
