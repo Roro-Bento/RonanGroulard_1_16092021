@@ -475,3 +475,36 @@ footer {
 .help-list-element {
     line-height: 30px;
 }
+
+
+/* phone responsive */
+
+@media screen and (max-width: 450px) {
+    /* header */
+    /* footer */
+    .footer {
+        flex-direction: column;
+    }
+    .about,
+    .services,
+    .help {
+        width: 100%;
+    }
+    .about-list {
+        list-style: none;
+        margin-left: -40px;
+    }
+    .about-list-element {
+        line-height: 30px;
+    }
+    .services-list {
+        list-style: none;
+        margin-left: -40px;
+    }
+    .services-list-element {
+        line-height: 30px;
+    }
+    .help {
+        width: 33%;
+    }
+}
