@@ -19,6 +19,11 @@ input {
     font-weight: 700;
 }
 
+body {
+    margin-left: 0;
+    margin-right: 0;
+}
+
 
 /* header */
 
@@ -236,7 +241,6 @@ input {
     border-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     overflow: hidden;
-    align-content: space-around;
 }
 
 .thumbnail-img {
@@ -481,6 +485,58 @@ footer {
 
 @media screen and (max-width: 450px) {
     /* header */
+    /* second section */
+    .accomodations {
+        flex-direction: column-reverse;
+        padding-left: 0;
+        width: 100%;
+    }
+    .left-subsection {
+        max-width: 100%;
+        background-color: white;
+    }
+    .left-subsec-title {
+        margin-left: 5%;
+    }
+    .thumbnail {
+        background-color: white;
+        width: 90%;
+        height: 250px;
+    }
+    .thumbnail-img {
+        height: 60%;
+        width: 97%;
+    }
+    .show-more {
+        margin: 40px 0 40px 5%;
+    }
+    .most-popular {
+        border-radius: 0px;
+        margin: 0;
+        padding: 0 5% 40px 5%;
+        max-width: 90%;
+    }
+    .popular-top {
+        margin: 0;
+    }
+    .trend-thumbnail {
+        width: 100%;
+    }
+    .trend-icon {
+        height: 20px;
+        width: auto;
+    }
+    .trend-thumbnail-img {
+        height: 140px;
+        width: 120px;
+    }
+    .trend-thumbail-info {
+        width: auto;
+        margin-left: 10px;
+    }
+    .trend-thumbnail-rating {
+        margin-top: 10px;
+    }
     /* third section */
     .activity {
         max-height: 175px;
@@ -503,9 +559,6 @@ footer {
     .activity-img {
         object-fit: cover;
         height: 70%;
-    }
-    .activity-info {
-        padding-left: 20px;
     }
     /* footer */
     .footer {
