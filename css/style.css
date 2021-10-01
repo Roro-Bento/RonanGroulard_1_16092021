@@ -127,6 +127,10 @@ input {
     padding: 0 10px;
 }
 
+.search-icon {
+    display: none;
+}
+
 .filters {
     display: flex;
     align-items: center;
@@ -485,6 +489,37 @@ footer {
 
 @media screen and (max-width: 450px) {
     /* header */
+    /* first section */
+    .search-bar {
+        padding-left: 0px;
+        width: 90%;
+        margin: 0 auto 0 auto;
+    }
+    .bar {
+        margin-bottom: 20px;
+    }
+    .search-button-end {
+        width: 50px;
+        border-radius: 10px;
+        margin-left: -15px;
+    }
+    .search-button-end>p {
+        display: none;
+    }
+    .search-icon {
+        display: initial;
+        height: 15px;
+        width: 15px;
+    }
+    .filters {
+        flex-wrap: wrap;
+    }
+    .filter-child {
+        padding: 0;
+    }
+    .filter-title {
+        width: 100%;
+    }
     /* second section */
     .accomodations {
         flex-direction: column-reverse;
