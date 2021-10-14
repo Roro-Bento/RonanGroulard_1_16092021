@@ -20,8 +20,9 @@ input {
 }
 
 body {
-    margin-left: 0;
-    margin-right: 0;
+    max-width: 1840px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -42,6 +43,10 @@ header {
     display: flex;
     flex-direction: row;
     padding-right: 20px;
+}
+
+.header-signup-mobile {
+    display: none;
 }
 
 .header-signup>a {
@@ -489,7 +494,48 @@ footer {
 
 @media screen and (max-width: 450px) {
     /* header */
-    /* first section */
+    header {
+        padding: 0;
+        flex-wrap: wrap;
+    }
+    #logo {
+        margin-left: 35px;
+    }
+    .header-nav>a:focus,
+    .header-signup>a:focus {
+        border-bottom: 2px solid #0065FC;
+        padding-bottom: 20px;
+        border-top: 0;
+        padding-top: 0px;
+        color: #0065FC;
+    }
+    .header-nav>a {
+        width: 50%;
+        text-align: center;
+    }
+    .header-signup {
+        display: none;
+    }
+    .header-signup-mobile {
+        display: initial;
+    }
+    .header-signup-mobile>a {
+        color: #0065FC;
+        font-weight: 700;
+        text-decoration: none;
+        margin-right: 35px;
+    }
+    .global-header-nav {
+        padding-right: 0;
+        width: 100%;
+    }
+    .header-nav {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 20px;
+    }
+    /* first section filter*/
     .search-bar {
         padding-left: 0px;
         width: 90%;
@@ -520,7 +566,7 @@ footer {
     .filter-title {
         width: 100%;
     }
-    /* second section */
+    /* second section accomodations */
     .accomodations {
         flex-direction: column-reverse;
         padding-left: 0;
@@ -556,6 +602,8 @@ footer {
     }
     .trend-thumbnail {
         width: 100%;
+        flex-direction: row;
+        flex-wrap: nowrap;
     }
     .trend-icon {
         height: 20px;
@@ -572,7 +620,7 @@ footer {
     .trend-thumbnail-rating {
         margin-top: 10px;
     }
-    /* third section */
+    /* third section activity */
     .activity {
         max-height: 175px;
         margin: 15px 0 15px 0;
