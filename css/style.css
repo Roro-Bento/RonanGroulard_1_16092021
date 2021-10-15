@@ -367,10 +367,6 @@ input {
 
 /* third section */
 
-.activities-title {
-    width: 100%;
-}
-
 .activities {
     margin: 20px auto 0 auto;
     width: 90%;
@@ -378,6 +374,10 @@ input {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+.activities-title {
+    width: 100%;
 }
 
 .activity {
