@@ -512,6 +512,8 @@ footer {
     .header-nav>a {
         width: 50%;
         text-align: center;
+        padding-bottom: 40px;
+        transition: all 0s cubic-bezier(0.26, 0.29, 0.68, 0.7);
     }
     .header-signup {
         display: none;
@@ -608,16 +610,23 @@ footer {
         margin-top: 10px;
     }
     /* third section activity */
-    .activity {
-        max-height: 175px;
-        margin: 15px 0 15px 0;
-    }
     .activities {
         flex-direction: column;
+        gap: 40px 0;
+    }
+    .activity {
+        width: 97%;
+        max-height: 400px;
+        margin: auto;
+        display: flex;
+    }
+    .activity-img {
+        width: 80%;
     }
     .activity-dual {
         flex-wrap: nowrap;
-        max-height: 410px;
+        max-height: 880px;
+        gap: 40px 0;
     }
     .card-60,
     .card-35,
@@ -631,7 +640,7 @@ footer {
     .card-50>.activity-img,
     .activity-img {
         object-fit: cover;
-        height: 70%;
+        height: auto;
     }
     /* footer */
     .footer {
